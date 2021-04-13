@@ -1,0 +1,530 @@
+/*
+Services panel begin
+*/
+/**
+User panel Services panel
+**/
+.user_panel .service_panel_inner{
+    background: #FFF;
+}
+
+.user_panel .service_panel{
+    padding: 0 15px !important;
+}
+/**
+User panel services panel end
+**/
+
+
+.driver_service{
+    padding: 30px       ;
+}
+
+.service_panel{
+    height: auto;
+    padding: 15px;
+}
+
+
+.service_panel_inner{
+    min-height: 300px;
+    border: 1px solid #B3B3B3;
+    border-radius: 10px;
+}
+
+.service_panel_head{
+    height: 80px;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-weight: bold;
+
+}
+
+.sp_active .service_panel_head{
+    background-color: #B3B3B3;
+    color: #fff;
+}
+
+
+
+.sp_standart .service_panel_head{
+    background-color: #3579B7;
+    color: #fff;
+}
+
+.sp_gold .service_panel_head{
+    background-color: #FAB606;
+    color: #745500;
+}
+
+.sp_premium .service_panel_head{
+    background-color: #6F2425;
+    color: #fff;
+}
+
+.sp_price_text{
+    color: #333333;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.sp_price{
+    text-align: center;
+    color: #333333;
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.manat{
+    font-family: JISAZNRegular, sans-serif
+}
+
+.sp_package{
+    color: #C4C4C4;
+    font-size: 16px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.sp_rules{
+    margin-top: 30px;
+}
+
+.sp_text{
+    padding: 15px 15px 0 30px;
+    font-size: 16px;
+}
+
+.sp_active i{
+    color: #B3B3B3
+}
+
+.sp_gold i{
+    color: #FAB606
+}
+
+.sp_premium i{
+    color: #6F2425
+}
+
+.sp_standart i{
+    color: #3579B7
+}
+
+.sp_check{
+    color: #A1A1A1;
+    font-size: 14px;
+    margin: 30px;
+ }
+
+.sp_check b{
+    color: #333333;
+    font-weight: bold;
+}
+
+.sp_check a{
+    text-decoration: underline;
+    color: #333333;
+}
+
+.sp_buttons{
+    margin: 30px;
+}
+
+.btn-sp{
+    width: 100%;
+    height: 50px;
+}
+
+
+.sp_active .btn-sp{
+    background-color: #B3B3B3 !important;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.sp_gold .btn-sp{
+    background-color: #FAB606 !important;
+}
+
+.sp_premium .btn-sp{
+    background-color: #6F2425 !important;
+    color: #FFF;
+}
+
+.sp_standart .btn-sp{
+    background-color: #3579B7 !important;
+    color: #FFF;
+}
+
+.btn-sp img{
+    margin-top: -5px;
+}
+
+.btn-norma{
+    background-color: #3579B7 !important;
+    color: #FFF;
+}
+
+.hr{
+    border: 1px solid #F7F7F7;
+    margin: 30px 0;
+}
+
+.contact_foot{
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+}
+
+.contact_foot div{
+    padding-top: 10px;
+}
+
+.contact_foot img{
+    margin-right: 10px;
+}
+/**********************************************************************************
+Services panel end
+************************************************************************************/
+
+.contact_icons{
+    margin-top: 10px;
+}
+
+.contact_icons a{
+    margin: 0 15px 0 0;
+}
+
+/**********************************************************************************
+Birdefelik xidmetler
+************************************************************************************/
+.once_panel_full{
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background: #FFF !important;
+}
+
+.corporate .once_panel_full{
+    background:  #245C8A !important;
+}
+
+.once_panel{
+    width: 100%;
+    border-left: 5px solid transparent;
+
+
+}
+
+.op .active, .once_panel:hover{
+    border-left: 5px solid #4986BE;
+    border-image: linear-gradient(to bottom, rgba(108,219,141,0) 25%, rgb(73, 134, 190) 25%, rgb(73, 134, 190) 75%, rgba(65, 48, 15, 0) 75%);
+    border-image-slice: 1;
+    cursor: pointer;
+}
+
+.op .active, .once_panel:hover{
+    border-left: 5px solid #74BCFF;
+    border-image: linear-gradient(to bottom, rgba(108,219,141,0) 25%, rgb(116, 188, 255) 25%, rgb(116, 188, 255) 75%, rgba(65, 48, 15, 0) 75%);
+    border-image-slice: 1;
+    cursor: pointer;
+}
+
+.op .active p{
+    color: #4986BE !important;
+}
+
+.once_panel:hover p{
+     color: #4986BE !important;
+
+}
+
+.corporate .op .active p{
+    color: #74BCFF !important;
+}
+
+.corporate  .once_panel:hover p{
+     color: #74BCFF !important;
+
+}
+
+.op_text {
+    font-size: 16px;
+    font-weight: bold;
+    color : #333333;
+    margin-top: 25px;
+ }
+
+.corporate .op_text{
+    color : #FFF !important;
+}
+
+
+
+.op_price{
+    font-size: 20px;
+    font-weight: bold;
+    color : #333333;
+    padding: 20px;
+    text-align: right;
+    margin-bottom: 0px !important;
+}
+
+.corporate .op_price{
+    color: #FFF;
+}
+
+
+.op_check{
+    width: 40px;
+    height: 20px;
+    margin-top: 50% !important;
+    margin-left: 10px !important;
+}
+
+.op_desc{
+     min-height: 50px;
+    display: none;
+    font-size: 14px;
+    color: #6D6D6D;
+    padding: 22px 30px;
+    border-top: 1px solid #fcfafa;
+    background: rgb(255,253,253);
+    background: linear-gradient(linen, rgb(234, 232, 232) 0%, rgb(250, 248, 248) 35%, rgba(255,253,253,1) 100%);
+
+}
+
+.corporate .op_desc{
+    background:  #FFF !important;
+}
+
+
+.op_right_panel{
+    border-radius: 10px;
+}
+
+.op_right_head{
+    background-color: #4986BE;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 20px 0;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+.corporate .op_right_head{
+    background-color:  #245C8A !important;
+}
+
+
+.op_right_text{
+    padding: 45px 0;
+    text-align: center;
+    background-color: #FFFFFF;
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.op_right_text_desc{
+    font-size: 16px;
+    color: #5C5C5C
+}
+
+.op_right_text_price{
+    font-weight: bold;
+    font-size: 36px;
+    color: #333333
+}
+
+.btn-gold{
+    background-color: #FAB606;
+    font-weight: bold;
+    font-size: 16px;
+    color: #000000;
+    margin: 20px 0 0;
+}
+
+.op_check_panel{
+    margin-top: 30% !important;
+}
+
+/**********************************************************************************
+Birdefelik xidmetler
+************************************************************************************/
+
+.birthday_label{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.settings-panel .nav-tabs > li.active > a:after, .order-body .nav-tabs > li.active > a:after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    background-color: #3379B7 !important;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.error-message .bootstrap-select.form-control, .error-message .form-control {
+    border: 2px solid #f95732 !important;
+}
+
+.error-message label, .error-message span{
+    color: red;
+}
+
+/**
+Sorgular
+*/
+
+.nav-panel{
+    background-color: #FFF !important;
+    min-height: 50px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.nav-panel ul li{
+    display: inline !important;
+}
+.nav-panel ul li a{
+    color: #333333;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+
+.nav-panel ul li a:hover, .nav-panel ul li a:active, .nav-panel  ul li.active a{
+    border-bottom: 3px solid #3379B7;
+    background-color: #FFF;
+    color: #3379B7;
+}
+
+.query_head{
+    min-height: 70px;
+    background: #FFF;
+    padding: 15px;
+    border: 1px solid #F8F8FB;
+    box-shadow: 0px 10px 0px 0 #F8F8FB;
+    margin-bottom: 10px;
+}
+
+.query_list{
+        background: #FFF;
+}
+
+.table-queries td{
+    font-size: 14px;
+    color: #333333;
+    font-weight: bold;
+}
+
+.table-queries td span{
+    font-weight: normal;
+    font-size: 12px;
+    color: #5F5F5F
+}
+
+.query_button{
+    margin-bottom: 10px;
+}
+
+.btn-noeffect{
+    background-color: #FFF !important;
+    border: 1px solid #3379B7 !important;
+    color: #3379B7 !important;
+}
+
+.btn-noeffect img{
+    margin-right: 10px;
+}
+
+.query_title{
+    font-size: 16px;
+    color: #333333;
+    font-weight: bold;
+}
+
+.query_create_body{
+    background: #fff !important;
+    padding: 30px;
+}
+/**
+Sorgular bitdi
+*/
+
+/**
+Sehife basladi
+*/
+
+.border_radius{
+    border-radius: 10px !important;
+}
+.panel_page{
+    background-color: #FFF;
+}
+
+
+.page_title{
+    color: #333333;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 30px;
+
+}
+
+.page_desc{
+    color: #A5A5A5;
+    font-size: 16px;
+}
+
+.page_img{
+    margin-bottom: 30px;
+}
+
+.margin_bottom_30{
+    margin-bottom: 30px;
+}
+/**
+Sehife bitdi
+*/
+
+
+/**
+My Packages
+*/
+
+.my_package_panel{
+    border-radius: 10px;
+    height: 500px;
+}
+
+.mp_main{
+    background: url("../img/bg_package.png");
+    height: 160px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+.mp_open{
+    background: #fff;
+    height: 340px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/*
+My Packages end
+**/
