@@ -13,7 +13,7 @@
     include("inc/header.php")
     ?>
 
-
+    <!-- +++++++++++++++++++++++ -->
     <section class="slide">
         <div class="container">
             <!-- when user not registered -->
@@ -45,16 +45,184 @@
             </div> -->
             <!-- when user registered -->
             <div class="row profile_bar">
-                <div class="left_bar">
-                    
+                <div class="col-md-8 col-sm-12 col-xs-12 left_bar">
+                    <div class="sidebar_inside">
+                        <div class="user_info">
+                            <a href="#" class="name">
+                                <img src="img/icons/userSidebar.svg" class="injectable" alt="#">
+                                <span>MAHİR VELİYEV</span>
+                            </a>
+                            <a href="#" class="customer_code">
+                                <img src="img/icons/codeIcn.svg" alt="#">
+                                <p>Müştəri kodu: <span>0000019</span></p>
+                            </a>
+                        </div>
+                        <ul class="menu">
+                            <li class="active_li">
+                                <a href="#">
+                                    <img class="injectable" src="img/menu-icons/question.svg" alt="">
+                                    <span>Sorğular</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img class="injectable" src="img/menu-icons/packages.svg" alt="">
+                                    <span>Alınan xidmətlər</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img class="injectable" src="img/menu-icons/consultation.svg" alt="">
+                                    <span>Konsultasiyalar</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img class="injectable" src="img/menu-icons/wallet.svg" alt="">
+                                    <span>Ödənişlər</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img class="injectable" src="img/menu-icons/settings.svg" alt="">
+                                    <span>Tənzimləmələr</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img class="injectable" src="img/menu-icons/exit.svg" alt="">
+                                    <span>Hesabdan çıx</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="informations">
+                        <div class="top">
+                            <div class="balance_block">
+                                <div class="card">
+                                    <div class="head">
+                                        <div class="balance_col">
+                                            <span class="title">Balansım</span>
+                                            <span class="balance">
+                                                100.00
+                                                <img src="img/manat.svg" class="injectable" alt="">
+                                            </span>
+                                        </div>
+                                        <div class="date_col">
+                                            <span class="title">Son əlavə tarixi</span>
+                                            <span class="date">09.09.2020</span>
+                                        </div>
+                                    </div>
+                                    <div class="foot">
+                                        <div class="left">
+                                            <span>ARTIRILAN BALANS GERİ QAYTARILMIR</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="balance_tab_bar">
+                                <div class="title">
+                                    <img src="img/wallet.svg" alt="#">
+                                    <span>BALANSI ARTIR</span>
+                                </div>
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li role="presentation" class="active">
+                                        <a href="#tab1" aria-controls="home" role="tab" data-toggle="tab">Bank kartı ilə</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="#tab2" aria-controls="profile" role="tab" data-toggle="tab">MilliÖn ilə</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane fade in active" id="tab1">
+                                    <div class="input">
+                                        <input type="number" placeholder="Məbləğ (AZN)">
+                                    </div>
+                                    <button type="button" class="btn_incr">
+                                        <span>Balansı artır</span>
+                                    </button>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="tab2">
+                                    <div class="input">
+                                        <input type="number" placeholder="Hesab Nömrəsi" id="aNumber">
+                                        <label for="aNumber">6033</label>
+                                    </div>
+                                    <a target="_blank" data-toggle="modal" data-target=".privacy-modal" class="info_btn">
+                                        <img src="img/info.svg" alt="#">
+                                        <span>Necə?</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="right_bar">
-                    
+                <div class="col-md-4 col-sm-12 col-xs-12 right_bar">
+                    <div class="top">
+                        <div class="card_bar">
+                            <h3 class="title_card">Abunəlİk növü</h3>
+                            <img src="img/bigUser.svg" alt="#">
+                            <span class="status">Fərdi</span>
+                        </div>
+                        <div class="card_bar">
+                            <h3 class="title_card">Abunəlİk müddətİ</h3>
+                            <div class="loader">
+                                <progress id="send" value="20" max="100"></progress>
+                                <progress id="recv" value="30" max="100"></progress>
+                            </div>
+                            <div class="info_subscribe">
+                                <span class="year circle">
+                                    1 il
+                                </span>
+                                <span class="week circle">
+                                    4 həftə
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="head">
+                            <h3 class="title_head">Alınan xİdmətlər</h3>
+                            <a href="#">
+                                <span>Digərləri</span>
+                                <img src="img/icons/arrow.svg" class="injectable" alt="#">
+                            </a>
+                        </div>
+                        <div class="items">
+                            <a href="#" class="item_service">
+                                <div class="icn">
+                                    <img src="img/book.svg" alt="#">
+                                </div>
+                                <span class="name">
+                                    Əmlak qeydiyyatı
+                                </span>
+                            </a>
+                            <a href="#" class="item_service">
+                                <div class="icn">
+                                    <img src="img/555.svg" alt="#">
+                                </div>
+                                <span class="name">
+                                    İntellektual mülkiyyət
+                                </span>
+                            </a>
+                            <a href="#" class="item_service">
+                                <div class="icn">
+                                    <img src="img/777.svg" alt="#">
+                                </div>
+                                <span class="name">
+                                    Əmək münasibətləri
+                                </span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- +++++++++++++++++++++++++ -->
     <section class="how_it_works">
         <div class="container">
             <!-- <div class="">
@@ -155,7 +323,7 @@
             </div>
         </div>
     </section>
-
+    <!-- +++++++++++++++++++++++++ -->
     <section class="blogs">
         <div class="container">
             <h1 class="title_blog">Bloq yazıları</h1>
@@ -296,6 +464,82 @@
     <?php
     include("inc/foot.php");
     ?>
+    <div class="privacy-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h5 style="display: inline-block;" class="modal-title">
+                        <h3>"NORMA" MMC-nin istifadəçi qaydaları</h3>
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </header>
+                <main class="modal-body">
+                    <div>
+
+                        <ul>
+                            <li>
+                                İstifadəçi sistemdə qeydiyyatdan keçməklə, şəxsi məlumatlarını tələb
+                                olunan qaydada qeyd etməlidir.
+                            </li>
+                            <li>
+                                İstifadəçi sistemdə qeydiyyatdan keçməklə, şəxsi məlumatlarını tələb
+                                olunan qaydada qeyd etməlidir.
+                            </li>
+                            <li>
+                                İstifadəçi sistemdə qeydiyyatdan keçməklə, şəxsi məlumatlarını tələb
+                                olunan qaydada qeyd etməlidir.
+                            </li>
+                            <li>
+                                İstifadəçi sistemdə qeydiyyatdan keçməklə, şəxsi məlumatlarını tələb
+                                olunan qaydada qeyd etməlidir.
+                            </li>
+                            <li>
+                                İstifadəçi sistemdə qeydiyyatdan keçməklə, şəxsi məlumatlarını tələb
+                                olunan qaydada qeyd etməlidir.
+                            </li>
+                            <li>
+                                İstifadəçi sistemdə qeydiyyatdan keçməklə, şəxsi məlumatlarını tələb
+                                olunan qaydada qeyd etməlidir.
+                            </li>
+                            <li>
+                                İstifadəçi sistemdə qeydiyyatdan keçməklə, şəxsi məlumatlarını tələb
+                                olunan qaydada qeyd etməlidir.
+                            </li>
+                            <li>
+                                İstifadəçi sistemdə qeydiyyatdan keçməklə, şəxsi məlumatlarını tələb
+                                olunan qaydada qeyd etməlidir.
+                            </li>
+                            <li>
+                                İstifadəçi sistemdə qeydiyyatdan keçməklə, şəxsi məlumatlarını tələb
+                                olunan qaydada qeyd etməlidir.
+                            </li>
+
+                            <li>
+                                İstifadəçi sistemdə qeydiyyatdan keçməklə, şəxsi məlumatlarını tələb
+                                olunan qaydada qeyd etməlidir.
+                            </li>
+                            <li>
+                                İstifadəçi sistemdə qeydiyyatdan keçməklə, şəxsi məlumatlarını tələb
+                                olunan qaydada qeyd etməlidir.
+                            </li>
+                            <li>
+                                İstifadəçi sistemdə qeydiyyatdan keçməklə, şəxsi məlumatlarını tələb
+                                olunan qaydada qeyd etməlidir.
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </main>
+                <footer class="modal-footer">
+                    <button class="btn btn-effect" data-dismiss="modal">
+                        Təsdiq </button>
+                </footer>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

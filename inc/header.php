@@ -9,13 +9,13 @@
                     <li class="login_btn">
                         <img src="img/icons/user.svg" alt="">
                         <a href="#" data-toggle="modal" data-target=".bs-example-modal-sm">Daxil ol</a>
-
                     </li>
                     <li><a href="/register">Qeydiyyat</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+    <!-- Navin icerisinnen modal cixarildi. -->
     <div class="login modal fade bs-example-modal-sm login_modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
         <div class="modal-dialog modal-sm" role="document">
             <div class="modal-content">
@@ -69,19 +69,17 @@
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
-                        <!-- <img src="img/menu-mob.png" alt="menu"> -->
-                        <img src="img/white-menu-mob.svg" alt="menu">
+                        <img src="img/menu-mob.svg" class="toggleIcn injectable" alt="menu">
                     </button>
-                    <a class="navbar-brand" href="/">
+                    <a class="navbar-brand logoHeader" href="/">
                         <!-- ++++++++ -->
-                        <!-- <img src="img/logoNew.png" class="img-responsive" alt="logo"> -->
-                        <img src="img/whitelogo.png" class="img-responsive" alt="logo">
+                        <img src="img/svgLogo.svg" class="img-responsive injectable" alt="logo">
                     </a>
                     <ul class="mobile navbar-nav">
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">AZE
-                                <!-- <img src="img/chevron.png" class="img-responsive" alt="arrow-bottom"> -->
-                                <img src="img/icons/white_chevron.svg" class="img-responsive" alt="arrow-bottom">
+                                <!-- +++++++++++++++++++ -->
+                                <img src="img/icons/new_chevron.svg" class="img-responsive injectable icnChevron" alt="arrow-bottom">
                             </a>
                             <ul class="dropdown-menu">
                                 <li>
@@ -89,14 +87,11 @@
                                         azərbaycanca
                                     </a>
                                 </li>
-
-
                                 <li>
                                     <a rel="alternate" hreflang="ru" href="ru">
                                         русский
                                     </a>
                                 </li>
-
                             </ul>
                         </li>
                     </ul>
@@ -106,7 +101,6 @@
                     <ul class="nav navbar-nav navbar-right web">
                         <li class="dropdown web">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">AZ
-                                <!--<img src="img/chevron.png" class="img-responsive" alt="arrow-bottom">-->
                             </a>
                             <ul class="dropdown-menu">
                                 <li>
@@ -123,14 +117,12 @@
                         </li>
                         <li class="tel">
                             <!-- ++++++++ -->
-                            <img src="img/white247.svg" alt="">
-                            <!-- <img src="img/247.png" alt=""> -->
+                            <img src="img/247.svg" class="injectable timeIcn" alt="">
                         </li>
 
                         <li class="tel">
                             <!-- ++++++++ -->
-                            <!-- <img src="img/qaynar.png" alt=""> -->
-                            <img src="img/whiteqaynar.svg" alt="">
+                            <img src="img/qaynar.svg" class="injectable qaynar" alt="">
                         </li>
                         <!--<li>
                         <a  class="btn-effect" href="/az/site/user-panel#/order">SİFARİŞ ET</a>
@@ -140,7 +132,7 @@
                     </ul>
                     <ul class="nav navbar-nav navbar-left">
                         <li class="top tel mobile">
-                            <img src="img/qaynar.png">
+                            <img src="img/qaynar.svg">
                             <!--
                         <a href="tel:*9595">*0005 <span>DƏSTƏK <br> XƏTTİ</span></a>
                         <button class="close-menu"><img src="img/close-menu.png" alt="lose"></button>-->

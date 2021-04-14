@@ -50,7 +50,7 @@
                     <ul class="text-right">
                         <li class="tel">
                             <!-- <a href="tel:*9595">*0005 <span>DƏSTƏK <br> XƏTTİ</span></a> -->
-                            <img src="img/whiteqaynar.svg" alt="#">
+                            <img src="img/qaynar.svg" class="injectable" alt="#">
                         </li>
                         <li>+994124498601</li>
                         <li>info@norma.az</li>

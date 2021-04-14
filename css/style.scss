@@ -691,6 +691,11 @@ body.en {
 
 .footer-top {
     li.tel {
+        svg {
+            path {
+                fill: #fff
+            }
+        }
         a {
             font-size: 32px;
             font-weight: 900;
@@ -840,6 +845,478 @@ body.en {
         b {
             font-size: 18px;
             float: right;
+        }
+    }
+    .profile_bar {
+        display: flex;
+        justify-content: space-between;
+        .left_bar {
+            background-color: #fff;
+            border-radius: 16px;
+            overflow: hidden;
+            padding: 0px !important;
+            display: flex;
+            justify-content: space-between;
+            .sidebar_inside {
+                width: 32%;
+                border-right: 1px solid #F2F2F2;
+                .user_info {
+                    padding: 30px 30px 20px 40px;
+                    border-bottom: 1px solid #F2F2F2;
+                    .name {
+                        display: flex;
+                        align-items: center;
+                        color: #333333;
+                        span {
+                            color: #333333;
+                            font-size: 16px;
+                            margin-left: 10px;
+                            font-weight: bold;
+                        }
+                        margin-bottom: 10px;
+                    }
+                    .customer_code {
+                        display: flex;
+                        align-items: center;
+                        color: #333333;
+                        p {
+                            margin: 0px;
+                            margin-left: 10px;
+                            font-size: 14px;
+                            span {
+                                color: #333333;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+                .menu {
+                    padding: 20px 30px 30px 40px;
+                    list-style: none;
+                    .active_li {
+                        a {
+                            span {
+                                color: #3379B7 !important;
+                            }
+                            svg {
+                                path {
+                                    fill: #3379B7 !important;
+                                }
+                            }
+                        }
+                    }
+                    li {
+                        &:not(:last-child) {
+                            margin-bottom: 15px;
+                        }
+                        &:hover {
+                            a {
+                                span {
+                                    color: #3379B7;
+                                }
+                                svg {
+                                    path {
+                                        fill: #3379B7
+                                    }
+                                }
+                            }
+                        }
+                        a {
+                            text-decoration: none;
+                            display: flex;
+                            align-items: center;
+                            svg {
+                                path {
+                                    transition: .3s;
+                                }
+                            }
+                            span {
+                                transition: .3s;
+                                color: #6D6D6D;
+                                font-size: 16px;
+                                font-weight: 600;
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            .informations {
+                width: 68%;
+                .top {
+                    .balance_block {
+                        padding: 30px 40px 20px 30px;
+                        .card {
+                            width: 100%;
+                            height: 179px;
+                            display: flex;
+                            align-items: flex-start;
+                            justify-content: space-between;
+                            flex-direction: column;
+                            // background-image: url(../img/bg_card.svg);
+                            // background-position: center;
+                            // background-size: cover;
+                            // background-repeat: no-repeat;
+                            background-color: #4699E2;
+                            padding: 20px;
+                            border-radius: 8px;
+                            background-color: 4699E2;
+                            .head {
+                                display: flex;
+                                align-items: flex-start;
+                                justify-content: space-between;
+                                width: 100%;
+                                .balance_col {
+                                    display: flex;
+                                    flex-direction: column;
+                                    .title {
+                                        font-size: 14px;
+                                        color: rgba(255, 255, 255, 0.7);
+                                    }
+                                    .balance {
+                                        font-size: 33px;
+                                        color: #fff;
+                                        font-weight: bold;
+                                        position: relative;
+                                        svg {
+                                            width: 18px;
+                                            height: 18px;
+                                            path {
+                                                fill: #fff;
+                                            }
+                                            position: absolute;
+                                            right: -25px;
+                                            top: 5px;
+                                        }
+                                    }
+                                }
+                                .date_col {
+                                    display: flex;
+                                    flex-direction: column;
+                                    .title {
+                                        text-align: right;
+                                        font-size: 12.79px;
+                                        color: rgba(255, 255, 255, 0.7);
+                                        margin-bottom: 6px;
+                                    }
+                                    .date {
+                                        text-align: right;
+                                        font-size: 14.62px;
+                                        color: #fff;
+                                    }
+                                }
+                            }
+                            .foot {
+                                display: flex;
+                                align-items: flex-start;
+                                justify-content: space-between;
+                                width: 100%;
+                                .left {
+                                    width: 100%;
+                                    span {
+                                        font-size: 12px;
+                                        color: #fff;
+                                        width: 124px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .balance_tab_bar {
+                        padding: 0px 40px 20px 30px;
+                        border-bottom: 1px solid #F2F2F2;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        .title {
+                            display: flex;
+                            align-items: center;
+                            max-width: 50%;
+                            span {
+                                margin-left: 10px;
+                                font-size: 16px;
+                                font-weight: bold;
+                            }
+                        }
+                        .nav-tabs {
+                            padding: 0px;
+                            border: none;
+                            max-width: 50%;
+                            height: 32px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            border: 1px solid #FAB606;
+                            border-radius: 8px;
+                            overflow: hidden;
+                            .active {
+                                background-color: #FAB606;
+                            }
+                            li {
+                                width: auto;
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                padding: 0px 10px;
+                                margin: 0px;
+                                a {
+                                    padding: 0px;
+                                    border: none;
+                                    background-color: transparent;
+                                }
+                            }
+                        }
+                    }
+                }
+                .bottom {
+                    padding: 20px 40px 30px 30px;
+                    .active {
+                        z-index: 1 !important;
+                    }
+                    .tab-content {
+                        height: 50px;
+                        overflow: hidden;
+                        position: relative;
+                        .tab-pane {
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
+                            width: 100%;
+                            height: 100%;
+                            z-index: 0;
+                        }
+                        #tab1 {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            .btn_incr {
+                                width: 48%;
+                                height: 50px;
+                                background-color: #3379B7;
+                                position: relative;
+                                border-radius: 8px;
+                                overflow: hidden;
+                                color: #fff;
+                                font-weight: bold;
+                                font-size: 18px;
+                            }
+                            .input {
+                                width: 48%;
+                                height: 50px;
+                                border-radius: 8px;
+                                border: 1px solid #3379B7;
+                                input {
+                                    width: 100%;
+                                    border: none;
+                                    background-color: transparent;
+                                    height: 100%;
+                                    padding: 0px 15px;
+                                    outline: none;
+                                    border: none;
+                                    &::-webkit-outer-spin-button,
+                                    &::-webkit-inner-spin-button {
+                                        -webkit-appearance: none;
+                                        margin: 0;
+                                    }
+                                }
+                            }
+                        }
+                        #tab2 {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            .input {
+                                width: 48%;
+                                height: 50px;
+                                border-radius: 8px;
+                                border: 1px solid #3379B7;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                input {
+                                    border: none;
+                                    background-color: transparent;
+                                    height: 100%;
+                                    width: 60%;
+                                    padding: 0px 15px;
+                                    outline: none;
+                                    border: none;
+                                    &::-webkit-outer-spin-button,
+                                    &::-webkit-inner-spin-button {
+                                        -webkit-appearance: none;
+                                        margin: 0;
+                                    }
+                                }
+                                label {
+                                    font-size: 22px;
+                                    margin: 0px;
+                                    font-weight: bold;
+                                    padding: 0px 15px;
+                                    border-left: 1px solid #DFDFDF;
+                                }
+                            }
+                            .info_btn {
+                                width: 48%;
+                                height: 50px;
+                                background-color: #3379B7;
+                                position: relative;
+                                border-radius: 8px;
+                                overflow: hidden;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                text-decoration: none;
+                                cursor: pointer;
+                                span {
+                                    color: #fff;
+                                    font-weight: bold;
+                                    font-size: 18px;
+                                }
+                                img {
+                                    width: 8px;
+                                    height: 18px;
+                                    position: absolute;
+                                    top: 15px;
+                                    left: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .right_bar {
+            padding-right: 0px;
+            padding-left: 25px;
+            .top {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                .card_bar {
+                    width: 47%;
+                    background-color: #fff;
+                    border-radius: 16px;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    min-height: 181px;
+                    padding: 15px;
+                    .title_card {
+                        margin: 0px;
+                        font-weight: 600;
+                        font-size: 13px;
+                        text-transform: uppercase;
+                    }
+                    .status {
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
+                    .icn {
+                        width: 36px;
+                        height: 43px;
+                    }
+                    .info_subscribe {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        width: 100%;
+                        .circle {
+                            position: relative;
+                            padding-left: 17px;
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                width: 10px;
+                                height: 10px;
+                                left: 0px;
+                                top: 50%;
+                                transform: translate(0%, -50%);
+                                border-radius: 100%;
+                            }
+                        }
+                        .year {
+                            &::before {
+                                background-color: #F9B506;
+                            }
+                        }
+                        .week {
+                            &::before {
+                                background-color: #4598E2;
+                            }
+                        }
+                    }
+                }
+            }
+            .bottom {
+                width: 100%;
+                border-radius: 16px;
+                background-color: #fff;
+                padding: 15px;
+                margin-top: 25px;
+                .head {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .title_head {
+                        margin: 0px;
+                        font-size: 13px;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                    }
+                    a {
+                        display: flex;
+                        align-items: center;
+                        span {
+                            color: #818181;
+                            margin-right: 7px;
+                        }
+                        svg {
+                            width: 12px;
+                            height: 9px;
+                            path {
+                                fill: #818181
+                            }
+                        }
+                    }
+                }
+                .items {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 15px;
+                    .item_service {
+                        width: 30%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        text-decoration: none;
+                        .icn {
+                            width: 74px;
+                            height: 74px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            overflow: hidden;
+                            border-radius: 20px;
+                            background: #F9B506;
+                            img {
+                                width: 50%;
+                            }
+                        }
+                        .name {
+                            font-weight: bold;
+                            font-size: 13px;
+                            margin: 10px 0 0 0;
+                            text-align: center;
+                            color: #333333;
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -3862,6 +4339,17 @@ li.dropdown {
                 border-radius: 0;
             }
         }
+        .profile_bar {
+            flex-direction: column;
+            .left_bar {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+            .right_bar {
+                width: 100%;
+                padding-left: 0px;
+            }
+        }
     }
     .main-slider {
         .owl-carousel {
@@ -4364,12 +4852,18 @@ li.dropdown {
     .navbar-header {
         width: 100%;
         ul {
-            float: right;
             list-style: none;
             padding: 0;
-            margin: 25px 55px 0 0;
-            a {
-                text-decoration: none;
+            li {
+                .dropdown-toggle {
+                    position: relative;
+                    top: 25px;
+                    left: 10px;
+                }
+                a {
+                    text-decoration: none;
+                    position: relative;
+                }
             }
         }
     }
@@ -4378,7 +4872,7 @@ li.dropdown {
         border: none;
         float: right;
         padding: 0;
-        margin: 25px 0 0;
+        margin: 35px 0 0;
     }
     .navbar-default {
         .navbar-toggle {
@@ -4655,6 +5149,9 @@ li.dropdown {
 }
 
 @media screen and (max-width: 768px) {
+    .blogs .title_blog {
+        margin-bottom: 30px !important;
+    }
     .blogs {
         .items {
             .item_blog {
@@ -4673,6 +5170,9 @@ li.dropdown {
             padding-bottom: 20px;
             .row {
                 flex-direction: column;
+                .nav-top-text {
+                    display: none;
+                }
                 ul {
                     width: 100%;
                 }
@@ -4680,7 +5180,6 @@ li.dropdown {
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
-                    margin-top: 5px;
                     li {
                         width: 48%;
                     }
@@ -4881,7 +5380,7 @@ li.dropdown {
     }
     .how_it_works {
         background: 0 0;
-        padding: 40px 0 0;
+        padding: 40px 0;
         .block-inner {
             .head {
                 br {
@@ -4921,9 +5420,77 @@ li.dropdown {
         padding: 40px 0;
     }
     .slide {
-        padding: 25px 0 0;
+        padding: 25px 0;
         .block {
             padding: 30px 15px;
+        }
+        .profile_bar {
+            .right_bar {
+                display: none;
+            }
+            .left_bar {
+                flex-direction: column-reverse;
+                margin-bottom: 0px;
+                .sidebar_inside {
+                    width: 100%;
+                    border: none;
+                    .user_info {
+                        padding: 20px;
+                    }
+                    .menu {
+                        padding: 20px;
+                    }
+                }
+                .informations {
+                    width: 100%;
+                    .top {
+                        .balance_block {
+                            padding: 20px;
+                        }
+                        .balance_tab_bar {
+                            padding: 0px 20px 20px 20px;
+                            flex-direction: column;
+                            .nav-tabs {
+                                max-width: 100%;
+                                width: 100%;
+                                li {
+                                    width: 50%;
+                                    a {
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                            .title {
+                                max-width: 100%;
+                                width: 100%;
+                                margin-bottom: 10px;
+                            }
+                        }
+                    }
+                    .bottom {
+                        padding: 20px;
+                        padding-bottom: 0px;
+                        .tab-content {
+                            height: 90px;
+                            .tab-pane {
+                                .input {
+                                    width: 100% !important;
+                                    height: 40px !important;
+                                }
+                            }
+                            #tab1,
+                            #tab2 {
+                                flex-direction: column;
+                                .btn_incr,
+                                .info_btn {
+                                    height: 40px;
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
     .section-header {
@@ -5988,6 +6555,34 @@ li.dropdown {
     .navbar {
         background: #2c77c5 !important;
     }
+    .collapse-menu .nav li.dropdown.web:after {
+        content: url(../img/icons/white_chevron.svg);
+    }
+    .navbar-default.nav-bottom .navbar-left a:hover {
+        border-color: #fff !important;
+    }
+    .logoHeader {
+        svg {
+            path {
+                fill: #fff
+            }
+            .opClass {
+                opacity: 0.3;
+            }
+            .transClass {
+                fill: #2c77c5;
+            }
+        }
+    }
+    .toggleIcn,
+    .icnChevron,
+    .timeIcn,
+    .qaynar {
+        display: inline-block;
+        path {
+            fill: #fff
+        }
+    }
     .navbar-left a,
     .dropdown a {
         color: #fff !important;
@@ -6111,9 +6706,6 @@ header {
             width: 10.55px;
             height: 12.7px;
         }
-    }
-    .collapse-menu .nav li.dropdown.web:after {
-        content: url(../img/icons/white_chevron.svg);
     }
     .navbar {
         padding: 5px 0px;
@@ -6294,4 +6886,875 @@ header {
             overflow: hidden;
         }
     }
+}
+
+.loader {
+    position: relative;
+    width: 97px;
+    height: 97px;
+}
+
+#send {
+    --progress-color: #F9B506;
+    --rest-color: #F0EFF5;
+    --size: 73;
+    --width: 6;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 100;
+}
+
+#recv {
+    position: absolute;
+    z-index: 10;
+    --progress-color: #4598E2;
+    --rest-color: #F0EFF5;
+    --size: 97;
+    --width: 6;
+}
+
+progress {
+    width: calc(var(--size) * 1px);
+    height: calc(var(--size) * 1px);
+    border-radius: 100%;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: transparent;
+    background: transparent;
+}
+
+progress:before {
+    content: "";
+    background: var(--background, white);
+    position: absolute;
+    z-index: 100;
+    width: calc((var(--size) - (var(--width) * 2)) * 1px);
+    height: calc((var(--size) - (var(--width) * 2)) * 1px);
+    border-radius: 50%;
+    margin: auto auto;
+}
+
+progress::-moz-progress-value {
+    background: transparent;
+}
+
+progress::-webkit-progress-value {
+    background: transparent;
+}
+
+progress::-moz-progress-value {
+    background: transparent;
+}
+
+progress::-webkit-progress-value {
+    background: transparent;
+}
+
+progress[value="0"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 0%, var(--rest-color) 0% 100%);
+}
+
+progress[value="1"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 1%, var(--rest-color) 1% 100%);
+}
+
+progress[value="2"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 2%, var(--rest-color) 2% 100%);
+}
+
+progress[value="3"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 3%, var(--rest-color) 3% 100%);
+}
+
+progress[value="4"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 4%, var(--rest-color) 4% 100%);
+}
+
+progress[value="5"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 5%, var(--rest-color) 5% 100%);
+}
+
+progress[value="6"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 6%, var(--rest-color) 6% 100%);
+}
+
+progress[value="7"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 7%, var(--rest-color) 7% 100%);
+}
+
+progress[value="8"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 8%, var(--rest-color) 8% 100%);
+}
+
+progress[value="9"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 9%, var(--rest-color) 9% 100%);
+}
+
+progress[value="10"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 10%, var(--rest-color) 10% 100%);
+}
+
+progress[value="11"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 11%, var(--rest-color) 11% 100%);
+}
+
+progress[value="12"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 12%, var(--rest-color) 12% 100%);
+}
+
+progress[value="13"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 13%, var(--rest-color) 13% 100%);
+}
+
+progress[value="14"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 14%, var(--rest-color) 14% 100%);
+}
+
+progress[value="15"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 15%, var(--rest-color) 15% 100%);
+}
+
+progress[value="16"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 16%, var(--rest-color) 16% 100%);
+}
+
+progress[value="17"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 17%, var(--rest-color) 17% 100%);
+}
+
+progress[value="18"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 18%, var(--rest-color) 18% 100%);
+}
+
+progress[value="19"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 19%, var(--rest-color) 19% 100%);
+}
+
+progress[value="20"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 20%, var(--rest-color) 20% 100%);
+}
+
+progress[value="21"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 21%, var(--rest-color) 21% 100%);
+}
+
+progress[value="22"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 22%, var(--rest-color) 22% 100%);
+}
+
+progress[value="23"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 23%, var(--rest-color) 23% 100%);
+}
+
+progress[value="24"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 24%, var(--rest-color) 24% 100%);
+}
+
+progress[value="25"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 25%, var(--rest-color) 25% 100%);
+}
+
+progress[value="26"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 26%, var(--rest-color) 26% 100%);
+}
+
+progress[value="27"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 27%, var(--rest-color) 27% 100%);
+}
+
+progress[value="28"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 28%, var(--rest-color) 28% 100%);
+}
+
+progress[value="29"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 29%, var(--rest-color) 29% 100%);
+}
+
+progress[value="30"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 30%, var(--rest-color) 30% 100%);
+}
+
+progress[value="31"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 31%, var(--rest-color) 31% 100%);
+}
+
+progress[value="32"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 32%, var(--rest-color) 32% 100%);
+}
+
+progress[value="33"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 33%, var(--rest-color) 33% 100%);
+}
+
+progress[value="34"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 34%, var(--rest-color) 34% 100%);
+}
+
+progress[value="35"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 35%, var(--rest-color) 35% 100%);
+}
+
+progress[value="36"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 36%, var(--rest-color) 36% 100%);
+}
+
+progress[value="37"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 37%, var(--rest-color) 37% 100%);
+}
+
+progress[value="38"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 38%, var(--rest-color) 38% 100%);
+}
+
+progress[value="39"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 39%, var(--rest-color) 39% 100%);
+}
+
+progress[value="40"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 40%, var(--rest-color) 40% 100%);
+}
+
+progress[value="41"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 41%, var(--rest-color) 41% 100%);
+}
+
+progress[value="42"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 42%, var(--rest-color) 42% 100%);
+}
+
+progress[value="43"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 43%, var(--rest-color) 43% 100%);
+}
+
+progress[value="44"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 44%, var(--rest-color) 44% 100%);
+}
+
+progress[value="45"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 45%, var(--rest-color) 45% 100%);
+}
+
+progress[value="46"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 46%, var(--rest-color) 46% 100%);
+}
+
+progress[value="47"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 47%, var(--rest-color) 47% 100%);
+}
+
+progress[value="48"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 48%, var(--rest-color) 48% 100%);
+}
+
+progress[value="49"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 49%, var(--rest-color) 49% 100%);
+}
+
+progress[value="50"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 50%, var(--rest-color) 50% 100%);
+}
+
+progress[value="51"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 51%, var(--rest-color) 51% 100%);
+}
+
+progress[value="52"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 52%, var(--rest-color) 52% 100%);
+}
+
+progress[value="53"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 53%, var(--rest-color) 53% 100%);
+}
+
+progress[value="54"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 54%, var(--rest-color) 54% 100%);
+}
+
+progress[value="55"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 55%, var(--rest-color) 55% 100%);
+}
+
+progress[value="56"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 56%, var(--rest-color) 56% 100%);
+}
+
+progress[value="57"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 57%, var(--rest-color) 57% 100%);
+}
+
+progress[value="58"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 58%, var(--rest-color) 58% 100%);
+}
+
+progress[value="59"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 59%, var(--rest-color) 59% 100%);
+}
+
+progress[value="60"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 60%, var(--rest-color) 60% 100%);
+}
+
+progress[value="61"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 61%, var(--rest-color) 61% 100%);
+}
+
+progress[value="62"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 62%, var(--rest-color) 62% 100%);
+}
+
+progress[value="63"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 63%, var(--rest-color) 63% 100%);
+}
+
+progress[value="64"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 64%, var(--rest-color) 64% 100%);
+}
+
+progress[value="65"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 65%, var(--rest-color) 65% 100%);
+}
+
+progress[value="66"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 66%, var(--rest-color) 66% 100%);
+}
+
+progress[value="67"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 67%, var(--rest-color) 67% 100%);
+}
+
+progress[value="68"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 68%, var(--rest-color) 68% 100%);
+}
+
+progress[value="69"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 69%, var(--rest-color) 69% 100%);
+}
+
+progress[value="70"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 70%, var(--rest-color) 70% 100%);
+}
+
+progress[value="71"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 71%, var(--rest-color) 71% 100%);
+}
+
+progress[value="72"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 72%, var(--rest-color) 72% 100%);
+}
+
+progress[value="73"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 73%, var(--rest-color) 73% 100%);
+}
+
+progress[value="74"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 74%, var(--rest-color) 74% 100%);
+}
+
+progress[value="75"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 75%, var(--rest-color) 75% 100%);
+}
+
+progress[value="76"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 76%, var(--rest-color) 76% 100%);
+}
+
+progress[value="77"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 77%, var(--rest-color) 77% 100%);
+}
+
+progress[value="78"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 78%, var(--rest-color) 78% 100%);
+}
+
+progress[value="79"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 79%, var(--rest-color) 79% 100%);
+}
+
+progress[value="80"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 80%, var(--rest-color) 80% 100%);
+}
+
+progress[value="81"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 81%, var(--rest-color) 81% 100%);
+}
+
+progress[value="82"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 82%, var(--rest-color) 82% 100%);
+}
+
+progress[value="83"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 83%, var(--rest-color) 83% 100%);
+}
+
+progress[value="84"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 84%, var(--rest-color) 84% 100%);
+}
+
+progress[value="85"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 85%, var(--rest-color) 85% 100%);
+}
+
+progress[value="86"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 86%, var(--rest-color) 86% 100%);
+}
+
+progress[value="87"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 87%, var(--rest-color) 87% 100%);
+}
+
+progress[value="88"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 88%, var(--rest-color) 88% 100%);
+}
+
+progress[value="89"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 89%, var(--rest-color) 89% 100%);
+}
+
+progress[value="90"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 90%, var(--rest-color) 90% 100%);
+}
+
+progress[value="91"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 91%, var(--rest-color) 91% 100%);
+}
+
+progress[value="92"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 92%, var(--rest-color) 92% 100%);
+}
+
+progress[value="93"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 93%, var(--rest-color) 93% 100%);
+}
+
+progress[value="94"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 94%, var(--rest-color) 94% 100%);
+}
+
+progress[value="95"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 95%, var(--rest-color) 95% 100%);
+}
+
+progress[value="96"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 96%, var(--rest-color) 96% 100%);
+}
+
+progress[value="97"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 97%, var(--rest-color) 97% 100%);
+}
+
+progress[value="98"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 98%, var(--rest-color) 98% 100%);
+}
+
+progress[value="99"]::-webkit-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 99%, var(--rest-color) 99% 100%);
+}
+
+progress[value="100"]::-webkit-progress-bar {
+    background: var(--progress-color);
+}
+
+progress[value="0"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 0%, var(--rest-color) 0% 100%);
+}
+
+progress[value="1"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 1%, var(--rest-color) 1% 100%);
+}
+
+progress[value="2"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 2%, var(--rest-color) 2% 100%);
+}
+
+progress[value="3"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 3%, var(--rest-color) 3% 100%);
+}
+
+progress[value="4"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 4%, var(--rest-color) 4% 100%);
+}
+
+progress[value="5"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 5%, var(--rest-color) 5% 100%);
+}
+
+progress[value="6"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 6%, var(--rest-color) 6% 100%);
+}
+
+progress[value="7"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 7%, var(--rest-color) 7% 100%);
+}
+
+progress[value="8"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 8%, var(--rest-color) 8% 100%);
+}
+
+progress[value="9"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 9%, var(--rest-color) 9% 100%);
+}
+
+progress[value="10"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 10%, var(--rest-color) 10% 100%);
+}
+
+progress[value="11"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 11%, var(--rest-color) 11% 100%);
+}
+
+progress[value="12"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 12%, var(--rest-color) 12% 100%);
+}
+
+progress[value="13"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 13%, var(--rest-color) 13% 100%);
+}
+
+progress[value="14"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 14%, var(--rest-color) 14% 100%);
+}
+
+progress[value="15"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 15%, var(--rest-color) 15% 100%);
+}
+
+progress[value="16"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 16%, var(--rest-color) 16% 100%);
+}
+
+progress[value="17"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 17%, var(--rest-color) 17% 100%);
+}
+
+progress[value="18"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 18%, var(--rest-color) 18% 100%);
+}
+
+progress[value="19"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 19%, var(--rest-color) 19% 100%);
+}
+
+progress[value="20"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 20%, var(--rest-color) 20% 100%);
+}
+
+progress[value="21"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 21%, var(--rest-color) 21% 100%);
+}
+
+progress[value="22"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 22%, var(--rest-color) 22% 100%);
+}
+
+progress[value="23"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 23%, var(--rest-color) 23% 100%);
+}
+
+progress[value="24"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 24%, var(--rest-color) 24% 100%);
+}
+
+progress[value="25"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 25%, var(--rest-color) 25% 100%);
+}
+
+progress[value="26"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 26%, var(--rest-color) 26% 100%);
+}
+
+progress[value="27"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 27%, var(--rest-color) 27% 100%);
+}
+
+progress[value="28"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 28%, var(--rest-color) 28% 100%);
+}
+
+progress[value="29"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 29%, var(--rest-color) 29% 100%);
+}
+
+progress[value="30"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 30%, var(--rest-color) 30% 100%);
+}
+
+progress[value="31"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 31%, var(--rest-color) 31% 100%);
+}
+
+progress[value="32"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 32%, var(--rest-color) 32% 100%);
+}
+
+progress[value="33"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 33%, var(--rest-color) 33% 100%);
+}
+
+progress[value="34"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 34%, var(--rest-color) 34% 100%);
+}
+
+progress[value="35"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 35%, var(--rest-color) 35% 100%);
+}
+
+progress[value="36"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 36%, var(--rest-color) 36% 100%);
+}
+
+progress[value="37"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 37%, var(--rest-color) 37% 100%);
+}
+
+progress[value="38"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 38%, var(--rest-color) 38% 100%);
+}
+
+progress[value="39"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 39%, var(--rest-color) 39% 100%);
+}
+
+progress[value="40"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 40%, var(--rest-color) 40% 100%);
+}
+
+progress[value="41"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 41%, var(--rest-color) 41% 100%);
+}
+
+progress[value="42"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 42%, var(--rest-color) 42% 100%);
+}
+
+progress[value="43"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 43%, var(--rest-color) 43% 100%);
+}
+
+progress[value="44"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 44%, var(--rest-color) 44% 100%);
+}
+
+progress[value="45"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 45%, var(--rest-color) 45% 100%);
+}
+
+progress[value="46"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 46%, var(--rest-color) 46% 100%);
+}
+
+progress[value="47"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 47%, var(--rest-color) 47% 100%);
+}
+
+progress[value="48"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 48%, var(--rest-color) 48% 100%);
+}
+
+progress[value="49"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 49%, var(--rest-color) 49% 100%);
+}
+
+progress[value="50"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 50%, var(--rest-color) 50% 100%);
+}
+
+progress[value="51"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 51%, var(--rest-color) 51% 100%);
+}
+
+progress[value="52"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 52%, var(--rest-color) 52% 100%);
+}
+
+progress[value="53"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 53%, var(--rest-color) 53% 100%);
+}
+
+progress[value="54"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 54%, var(--rest-color) 54% 100%);
+}
+
+progress[value="55"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 55%, var(--rest-color) 55% 100%);
+}
+
+progress[value="56"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 56%, var(--rest-color) 56% 100%);
+}
+
+progress[value="57"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 57%, var(--rest-color) 57% 100%);
+}
+
+progress[value="58"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 58%, var(--rest-color) 58% 100%);
+}
+
+progress[value="59"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 59%, var(--rest-color) 59% 100%);
+}
+
+progress[value="60"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 60%, var(--rest-color) 60% 100%);
+}
+
+progress[value="61"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 61%, var(--rest-color) 61% 100%);
+}
+
+progress[value="62"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 62%, var(--rest-color) 62% 100%);
+}
+
+progress[value="63"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 63%, var(--rest-color) 63% 100%);
+}
+
+progress[value="64"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 64%, var(--rest-color) 64% 100%);
+}
+
+progress[value="65"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 65%, var(--rest-color) 65% 100%);
+}
+
+progress[value="66"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 66%, var(--rest-color) 66% 100%);
+}
+
+progress[value="67"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 67%, var(--rest-color) 67% 100%);
+}
+
+progress[value="68"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 68%, var(--rest-color) 68% 100%);
+}
+
+progress[value="69"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 69%, var(--rest-color) 69% 100%);
+}
+
+progress[value="70"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 70%, var(--rest-color) 70% 100%);
+}
+
+progress[value="71"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 71%, var(--rest-color) 71% 100%);
+}
+
+progress[value="72"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 72%, var(--rest-color) 72% 100%);
+}
+
+progress[value="73"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 73%, var(--rest-color) 73% 100%);
+}
+
+progress[value="74"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 74%, var(--rest-color) 74% 100%);
+}
+
+progress[value="75"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 75%, var(--rest-color) 75% 100%);
+}
+
+progress[value="76"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 76%, var(--rest-color) 76% 100%);
+}
+
+progress[value="77"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 77%, var(--rest-color) 77% 100%);
+}
+
+progress[value="78"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 78%, var(--rest-color) 78% 100%);
+}
+
+progress[value="79"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 79%, var(--rest-color) 79% 100%);
+}
+
+progress[value="80"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 80%, var(--rest-color) 80% 100%);
+}
+
+progress[value="81"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 81%, var(--rest-color) 81% 100%);
+}
+
+progress[value="82"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 82%, var(--rest-color) 82% 100%);
+}
+
+progress[value="83"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 83%, var(--rest-color) 83% 100%);
+}
+
+progress[value="84"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 84%, var(--rest-color) 84% 100%);
+}
+
+progress[value="85"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 85%, var(--rest-color) 85% 100%);
+}
+
+progress[value="86"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 86%, var(--rest-color) 86% 100%);
+}
+
+progress[value="87"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 87%, var(--rest-color) 87% 100%);
+}
+
+progress[value="88"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 88%, var(--rest-color) 88% 100%);
+}
+
+progress[value="89"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 89%, var(--rest-color) 89% 100%);
+}
+
+progress[value="90"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 90%, var(--rest-color) 90% 100%);
+}
+
+progress[value="91"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 91%, var(--rest-color) 91% 100%);
+}
+
+progress[value="92"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 92%, var(--rest-color) 92% 100%);
+}
+
+progress[value="93"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 93%, var(--rest-color) 93% 100%);
+}
+
+progress[value="94"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 94%, var(--rest-color) 94% 100%);
+}
+
+progress[value="95"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 95%, var(--rest-color) 95% 100%);
+}
+
+progress[value="96"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 96%, var(--rest-color) 96% 100%);
+}
+
+progress[value="97"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 97%, var(--rest-color) 97% 100%);
+}
+
+progress[value="98"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 98%, var(--rest-color) 98% 100%);
+}
+
+progress[value="99"]::-moz-progress-bar {
+    background: conic-gradient(var(--progress-color) 0% 99%, var(--rest-color) 99% 100%);
 }

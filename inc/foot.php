@@ -7,5 +7,7 @@
 <script src="js/bootstrap-datetimepicker.min.js"></script>
 <script src="js/voerro-vue-tagsinput.js"></script>
 <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<!-- +++++++++++++++++++++++++++++++  -->
+<script src="js/svg-inject.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 <script type="text/javascript" src="js/calculator.js?1603478453"></script>
