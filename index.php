@@ -194,7 +194,7 @@
                         <div class="items">
                             <a href="#" class="item_service">
                                 <div class="icn">
-                                    <img src="img/book.svg" alt="#">
+                                    <img class="injectable" src="img/x-icons/emlakqeydiyyati.svg" alt="#">
                                 </div>
                                 <span class="name">
                                     Əmlak qeydiyyatı
@@ -202,7 +202,7 @@
                             </a>
                             <a href="#" class="item_service">
                                 <div class="icn">
-                                    <img src="img/555.svg" alt="#">
+                                    <img class="injectable" src="img/x-icons/intelektualmulkiyyet.svg" alt="#">
                                 </div>
                                 <span class="name">
                                     İntellektual mülkiyyət
@@ -210,7 +210,7 @@
                             </a>
                             <a href="#" class="item_service">
                                 <div class="icn">
-                                    <img src="img/777.svg" alt="#">
+                                    <img class="injectable" src="img/x-icons/emekmunasibetleri.svg" alt="#">
                                 </div>
                                 <span class="name">
                                     Əmək münasibətləri

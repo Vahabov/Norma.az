@@ -1295,8 +1295,11 @@ body.en {
                             overflow: hidden;
                             border-radius: 20px;
                             background: #f9b506;
-                            img {
+                            svg {
                                 width: 50%;
+                                path{
+                                    fill: #000
+                                }
                             }
                         }
                         .name {

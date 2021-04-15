@@ -1429,8 +1429,12 @@ body.en .footer-top li.tel.num a:after {
   background: #f9b506;
 }
 
-.slide .profile_bar .right_bar .bottom .items .item_service .icn img {
+.slide .profile_bar .right_bar .bottom .items .item_service .icn svg {
   width: 50%;
+}
+
+.slide .profile_bar .right_bar .bottom .items .item_service .icn svg path {
+  fill: #000;
 }
 
 .slide .profile_bar .right_bar .bottom .items .item_service .name {
