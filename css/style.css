@@ -2493,18 +2493,18 @@ button:focus {
 }
 
 .register_block .tab-content form .success_mess .message {
-  color: #00C969;
+  color: #00c969;
   font-size: 11px;
   margin: 0px;
   display: block;
 }
 
 .register_block .tab-content form .error_mess input {
-  border-color: #DE4436 !important;
+  border-color: #de4436 !important;
 }
 
 .register_block .tab-content form .error_mess .message {
-  color: #DE4436;
+  color: #de4436;
   font-size: 11px;
   margin: 0px;
   display: block;
@@ -4898,6 +4898,42 @@ li.dropdown {
 }
 
 @media only screen and (max-width: 991px) {
+  .law_page {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .law_page .left {
+    width: 100% !important;
+  }
+  .law_page .left .tab_container .tab_law .tab_in {
+    padding: 20px !important;
+  }
+  .law_page .right {
+    width: 100% !important;
+    margin-bottom: 30px;
+  }
+  .law_page .right .total_block .center {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .law_page .right .total_block .center .buy_btn {
+    width: 100% !important;
+    margin-top: 10px;
+  }
+  .law_page .right .items .item {
+    height: auto !important;
+    padding: 15px 20px 15px 60px !important;
+  }
+  .law_page .right .items .item .checkBox {
+    top: 15px !important;
+  }
+  .law_page .right .items .item .main .name {
+    font-size: 14px !important;
+  }
   .blogs .items {
     -ms-flex-wrap: wrap !important;
         flex-wrap: wrap !important;
@@ -6689,6 +6725,306 @@ header .collapse-menu ul.navbar-left {
       -ms-flex-pack: center;
           justify-content: center;
   overflow: hidden;
+}
+
+.law_page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.law_page .left {
+  width: 55%;
+}
+
+.law_page .left .tab_container .active {
+  display: block !important;
+}
+
+.law_page .left .tab_container .tab_law {
+  display: none;
+}
+
+.law_page .left .tab_container .tab_law .tab_in {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 50px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.law_page .left .tab_container .tab_law .tab_in .icn {
+  width: 90px;
+  height: 90px;
+}
+
+.law_page .left .tab_container .tab_law .tab_in .icn img {
+  width: 100%;
+  height: 100%;
+}
+
+.law_page .left .tab_container .tab_law .tab_in .title_law {
+  font-weight: bold;
+  font-size: 22px;
+  margin: 30px 0px;
+  text-transform: uppercase;
+}
+
+.law_page .left .tab_container .tab_law .tab_in .content {
+  padding-bottom: 0px;
+}
+
+.law_page .left .tab_container .tab_law .tab_in .content p {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.law_page .left .tab_container .tab_law .tab_in .foot_img {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.law_page .right {
+  width: 42%;
+}
+
+.law_page .right .items .active::before {
+  height: 46px !important;
+}
+
+.law_page .right .items .active .main .name {
+  color: #4986be !important;
+}
+
+.law_page .right .items .active .main .price svg path {
+  fill: #4986be !important;
+}
+
+.law_page .right .items .active .main .price span {
+  color: #4986be !important;
+}
+
+.law_page .right .items .item {
+  position: relative;
+  background-color: #fff;
+  padding: 20px 20px 20px 60px;
+  overflow: hidden;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+  width: 100%;
+  text-align: left;
+}
+
+.law_page .right .items .item:hover .main .name {
+  color: #4986be !important;
+}
+
+.law_page .right .items .item:hover .main .price svg path {
+  fill: #4986be !important;
+}
+
+.law_page .right .items .item:hover .main .price span {
+  color: #4986be !important;
+}
+
+.law_page .right .items .item:hover::before {
+  height: 46px;
+}
+
+.law_page .right .items .item::before {
+  content: "";
+  width: 5px;
+  height: 0px;
+  background-color: #4986be;
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+  border-radius: 0px 4px 4px 0px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.law_page .right .items .item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.law_page .right .items .item .checkBox {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 25px;
+  left: 20px;
+}
+
+.law_page .right .items .item .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.law_page .right .items .item .main .name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333333;
+  width: 80%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.law_page .right .items .item .main .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.law_page .right .items .item .main .price svg {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  top: -11px;
+  right: -3px;
+}
+
+.law_page .right .items .item .main .price svg path {
+  fill: #333333;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.law_page .right .items .item .main .price span {
+  font-weight: bold;
+  font-size: 20px;
+  color: #333333;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.law_page .right .total_block {
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.law_page .right .total_block .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #4986be;
+  height: 58px;
+  padding: 0px 20px;
+}
+
+.law_page .right .total_block .head .total_title {
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.law_page .right .total_block .head .count_service {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 0px;
+}
+
+.law_page .right .total_block .head .count_service span {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.law_page .right .total_block .center {
+  background-color: #fff;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.law_page .right .total_block .center .total span {
+  display: block;
+}
+
+.law_page .right .total_block .center .total .label {
+  font-size: 14px;
+  color: rgba(51, 51, 51, 0.8);
+  margin-bottom: 5px;
+  padding: 0px;
+}
+
+.law_page .right .total_block .center .total .price {
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.law_page .right .total_block .center .buy_btn {
+  height: 50px;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 8px;
+  background-color: #fab606;
+  color: #000;
+  font-size: 16px;
+  text-transform: uppercase;
 }
 
 .loader {
