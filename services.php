@@ -113,7 +113,7 @@
                                 <div class="icn">
                                     <img src="img/x-icons/ailehuququ.svg" alt="#">
                                 </div>
-                                <h3 class="title_law">Onlİne konsultasİya</h3>
+                                <h3 class="title_law">Ailə hüququ</h3>
                                 <div class="content">
                                     <p>
                                         Bütün hüquqi məsələlərlə bağlı online konsultasiya xidməti. Bu konsultasiya yalnız *0005 çağırı mərkəzinə zəng (maksimum 30 dəqiqə) və saytda sorğu yaratmaqla keçirilir. Ofisdə hüquqşünas qəbulu bu xidmətə daxil deyil və fərdi tənzimlənir.
