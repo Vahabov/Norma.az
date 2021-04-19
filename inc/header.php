@@ -28,12 +28,27 @@
                     <div class="row">
                         <div class="login-left col-sm-6 col-xs-12">
                             <h3>Hesaba daxil ol</h3>
-                            <div class="input-group border-radius">
+                            <select class="select">
+                                <option value="Fərdi">Fərdi</option>
+                                <option value="lorem">lorem</option>
+                                <option value="ipsum">ipsum</option>
+                            </select>
+                            <div class="phone_input">
+                                <div class="inputs">
+                                    <select>
+                                        <option value="010">010</option>
+                                        <option value="011">011</option>
+                                        <option value="012">012</option>
+                                    </select>
+                                    <input type="number" id="number" placeholder="50 000 00 00">
+                                </div>
+                            </div>
+                            <!-- <div class="input-group border-radius">
                                 <label>
                                     <input name="email" required type="text" class="form-control inputText" placeholder=" ">
                                     <span>E-mail *</span>
                                 </label>
-                            </div>
+                            </div> -->
                             <div class="input-group border-radius">
                                 <label>
                                     <input name="password" required type="password" required class="form-control inputText" placeholder=" ">

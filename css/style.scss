@@ -3604,6 +3604,42 @@ textarea.form-control {
         padding: 39px 42px 70px;
         position: absolute;
         height: 100%;
+        .select {
+            width: 100%;
+            height: 40px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            padding: 0px 10px;
+            margin-bottom: 15px;
+        }
+        .phone_input {
+            margin-bottom: 15px;
+            .inputs {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                height: 40px;
+                select {
+                    width: 30%;
+                    height: 100%;
+                    border: 1px solid #cccccc;
+                    border-radius: 4px 0px 0px 4px;
+                    padding: 0px 10px;
+                }
+                input {
+                    width: 70%;
+                    height: 100%;
+                    border: 1px solid #cccccc;
+                    border-radius: 0px 4px 4px 0px;
+                    padding: 0px 10px;
+                    &::-webkit-outer-spin-button,
+                    &::-webkit-inner-spin-button {
+                        -webkit-appearance: none;
+                        margin: 0;
+                    }
+                }
+            }
+        }
     }
     h3 {
         margin-bottom: 40px;
@@ -7570,7 +7606,7 @@ header {
                     max-width: 50%;
                     span {
                         display: block;
-                        color: #3C3F44;
+                        color: #3c3f44;
                     }
                     .label_date {
                         color: rgba(60, 63, 68, 0.5);
@@ -7590,12 +7626,12 @@ header {
                         padding: 0px 20px;
                         min-width: 93px;
                         height: 34px;
-                        border: 1px solid #3379B7;
+                        border: 1px solid #3379b7;
                         border-radius: 8px;
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        color: #3C3F44;
+                        color: #3c3f44;
                     }
                 }
             }
