@@ -3005,6 +3005,7 @@
     .panel-page .col-md-9 {
         padding-left: 25px;
         margin-left: 25px;
+        padding-right: 0px;
     }
 
     .panel-page .col-md-9 .block {
