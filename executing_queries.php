@@ -64,7 +64,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="right">
-                                                    <a href="#" class="details_btn">
+                                                    <a href="#" class="details_btn" target="_blank" data-toggle="modal" data-target=".privacy-modal">
                                                         Ətraflı
                                                     </a>
                                                 </div>
@@ -93,7 +93,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="right">
-                                                    <a href="#" class="details_btn">
+                                                    <a href="#" class="details_btn" target="_blank" data-toggle="modal" data-target=".privacy-modal">
                                                         Ətraflı
                                                     </a>
                                                 </div>
@@ -110,7 +110,82 @@
         </section>
 
     </section>
+    <div class="privacy-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h5 style="display: inline-block;" class="modal-title">
+                        <h3>"NORMA" MMC-nin istifadəçi qaydaları</h3>
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </header>
+                <main class="modal-body">
+                    <div>
 
+                        <ul>
+                            <li>
+                                İstifadəçi sistemdə qeydiyyatdan keçməklə, şəxsi məlumatlarını tələb
+                                olunan qaydada qeyd etməlidir.
+                            </li>
+                            <li>
+                                İstifadəçi sistemdə qeydiyyatdan keçməklə, şəxsi məlumatlarını tələb
+                                olunan qaydada qeyd etməlidir.
+                            </li>
+                            <li>
+                                İstifadəçi sistemdə qeydiyyatdan keçməklə, şəxsi məlumatlarını tələb
+                                olunan qaydada qeyd etməlidir.
+                            </li>
+                            <li>
+                                İstifadəçi sistemdə qeydiyyatdan keçməklə, şəxsi məlumatlarını tələb
+                                olunan qaydada qeyd etməlidir.
+                            </li>
+                            <li>
+                                İstifadəçi sistemdə qeydiyyatdan keçməklə, şəxsi məlumatlarını tələb
+                                olunan qaydada qeyd etməlidir.
+                            </li>
+                            <li>
+                                İstifadəçi sistemdə qeydiyyatdan keçməklə, şəxsi məlumatlarını tələb
+                                olunan qaydada qeyd etməlidir.
+                            </li>
+                            <li>
+                                İstifadəçi sistemdə qeydiyyatdan keçməklə, şəxsi məlumatlarını tələb
+                                olunan qaydada qeyd etməlidir.
+                            </li>
+                            <li>
+                                İstifadəçi sistemdə qeydiyyatdan keçməklə, şəxsi məlumatlarını tələb
+                                olunan qaydada qeyd etməlidir.
+                            </li>
+                            <li>
+                                İstifadəçi sistemdə qeydiyyatdan keçməklə, şəxsi məlumatlarını tələb
+                                olunan qaydada qeyd etməlidir.
+                            </li>
+
+                            <li>
+                                İstifadəçi sistemdə qeydiyyatdan keçməklə, şəxsi məlumatlarını tələb
+                                olunan qaydada qeyd etməlidir.
+                            </li>
+                            <li>
+                                İstifadəçi sistemdə qeydiyyatdan keçməklə, şəxsi məlumatlarını tələb
+                                olunan qaydada qeyd etməlidir.
+                            </li>
+                            <li>
+                                İstifadəçi sistemdə qeydiyyatdan keçməklə, şəxsi məlumatlarını tələb
+                                olunan qaydada qeyd etməlidir.
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </main>
+                <footer class="modal-footer">
+                    <button class="btn btn-effect" data-dismiss="modal">
+                        Təsdiq </button>
+                </footer>
+            </div>
+        </div>
+    </div>
     <?php
     include("inc/footer.php");
     ?>
