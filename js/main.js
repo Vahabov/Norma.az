@@ -238,5 +238,12 @@ $(document).ready(function () {
         $(this).addClass('active');
         $(`#${thisDataId}`).show();
     })
+    $(window).on('click',function(){
+        $(".box_in").fadeOut('fast');
+    })
+    $('.info_btn').on('click', function (e) {
+        e.stopPropagation()
+        $(".box_in").fadeToggle('fast');
+    });
 
 });

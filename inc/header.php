@@ -5,13 +5,54 @@
                 <ul class="nav navbar-nav nav-top-text">
                     <li>HÜQUQ BİR GÜN HƏR KƏSƏ LAZIM OLUR</li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right">
+                <!-- <ul class="nav navbar-nav navbar-right">
                     <li class="login_btn">
                         <img src="img/icons/user.svg" alt="">
                         <a href="#" data-toggle="modal" data-target=".bs-example-modal-sm">Daxil ol</a>
                     </li>
                     <li><a href="/register">Qeydiyyat</a></li>
-                </ul>
+                </ul> -->
+                <div class="nav navbar-nav user_info_block">
+                    <button type="button" class="info_btn">
+                        <img src="img/icons/user.svg" alt="">
+                        <span>Kamil Vahabov</span>
+                        <img src="img/icons/chevron.svg" alt="">
+                    </button>
+                    <div class="box_in">
+                        <ul>
+                            <li class="active_li">
+                                <a href="#">
+                                    Sorğular
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Alınan xidmətlər
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Konsultasiyalar
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Ödənişlər
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Tənzimləmələr
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Hesabdan çıx
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
